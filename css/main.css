@@ -1,0 +1,175 @@
+body, html { 
+    font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.hdr {
+    display: flex;
+}
+
+.headerNav {
+    margin: 20px 20px 20px auto;
+}
+
+.nav {
+    padding-right: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav:hover {
+    color: black;
+    background-color: beige;
+    cursor: pointer;
+}
+
+body {
+    background: rgba(0,0,0,0.6) url(../images/SmileTeeth3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.logoText {
+    font-family: 'Satisfy', cursive;
+    font-size: 4em;
+    margin: 10px 20px;
+    color: beige;
+    border: 1px solid beige;
+    height: 1.5em;
+    padding: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin: 0 50px 180px 50px;
+}
+
+.card {
+	background-color: rgba(255,255,255,0.15);
+    color: beige;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 1.0);
+	padding: 8px;
+	margin-left: auto;
+	width: 50%;
+	font-size: 15px;
+	/* text-align: justify; */
+  }
+
+  .cardLogo {
+    font-family: 'Satisfy', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  img {
+      width: 60%;
+      margin: 50px 0;
+  }
+
+  section {
+      background-color: black;
+      border-top: 1px solid beige;
+  }
+
+  .pricing {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+      /* grid-template-rows: auto; */
+      border-bottom: 1px solid beige;
+  }
+
+  .icon {
+      padding: 0;
+      margin: 0;
+  }
+
+  #pricing h2 {
+    font-size: 1em;
+}
+
+  .answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .col1 {
+      margin: 20px;
+  }
+
+  #faq h1, #pricing h1 {
+      /* margin-bottom: 2px;
+      margin-left: 20px; */
+      margin: 20px;
+      line-height: .1em;
+  }
+
+  #faq h2 {
+      font-size: 1em;
+  }
+
+  .col1 p {
+      font-size: .75rem;
+      line-height: 1.5;
+  }
+
+  footer {
+      background-color: black;
+      bottom: 0px;
+      top: 5px;
+      width: 100%;
+      text-align: center;
+      font-style: italic;
+      font-size: .80em;
+      color: beige;
+}
+
+  /* media view */
+@media only screen and (max-width:650px)
+{
+    header {
+        margin: auto;
+        display: block;
+		float: center;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 80vw;
+    }
+
+    body {
+        background-color: black;
+    }
+	.hdr, .container
+	{
+		display: block;
+		float: center;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 80vw;
+	}
+	.card {
+        background-color: rgba(255,255,255,0.1);
+        border: 1px solid beige;
+		margin: auto;
+	}
+
+    .pricing, .answers {
+        display: block;
+    }
+
+}
