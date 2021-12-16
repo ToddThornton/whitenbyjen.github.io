@@ -7,6 +7,7 @@ body, html {
 
 .hdr {
     display: flex;
+    position: relative;
 }
 
 .headerNav {
@@ -38,6 +39,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    position: absolute;
 }
 
 .logoText {
@@ -53,7 +55,8 @@ body {
 .container {
     display: grid;
     grid-template-columns: 50% auto;
-    margin: 0 50px 180px 50px;
+    margin: 0px 50px 180px 50px;
+    position: relative;
 }
 
 .card {
@@ -82,6 +85,7 @@ body {
   section {
       background-color: black;
       border-top: 1px solid beige;
+      position: relative;
   }
 
   .pricing {
@@ -140,6 +144,9 @@ body {
   /* media view */
 @media only screen and (max-width:650px)
 {
+    .bkgimg {
+        visibility: hidden;
+    }
     header {
         margin: auto;
         display: block;
